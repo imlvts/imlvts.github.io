@@ -9,7 +9,7 @@
 body {
     width: 800px;
     margin: auto;
-    font-family: Fira Sans;
+    font-family: Fira Sans, Verdana, sans-serif;
     font-weight: 500;
 }
 
@@ -17,16 +17,27 @@ a {
     color: black;
 }
 
-h2>a[name], h3>a[name] {
-    visibility: hidden;
+/* section anchors */
+h2>a.anchor, h3>a.anchor {
     color: grey;
     text-decoration: none;
-    margin-left: 5px;
+    display: block;
+    float: left;
+    position: absolute;
+    width: 0.8em;
+    margin-left: -0.8em;
+    text-align: right;
 }
 
-h2:hover>a[name], h3:hover>a[name] {
+h2>a.anchor>span, h3>a.anchor>span {
+    visibility: hidden;
+    user-select: none;
+}
+
+:hover>a.anchor>span, a.anchor:hover>span {
     visibility: visible;
 }
+/* /section anchors */
 
 section p, section h3, section ul {
     margin-left: 30px;
@@ -47,14 +58,14 @@ section {
 <h1>Igor Malovitsa</h1>
 
 <section>
-    <h2>Contacts<a name="contacts" href="#contacts">§</a></h2>
+    <h2 id="contacts"><a class="anchor" href="#contacts"><span>§</span></a>Contacts</h2>
     <p><b>Cell:</b> <a href="tel:+380959415600">+38 (095) 94-15-600</a>
     <p><b>Email:</b> <a href="mailto:igor.malovitsa@gmail.com">igor.malovitsa@gmail.com</a>
     <p><b>Skype:</b> <a href="skype:igor.malovitsa">igor.malovitsa</a>
 </section>
 
 <section>
-    <h2>About myself<a name="about" href="#about">§</a></h2>
+    <h2 id="about"><a class="anchor" href="#about"><span>§</span></a>About myself</h2>
     <p>I'm an efficient software developer with 6+ years of commercial experience in IT industry.
     <p>I prefer problem solving over blaming.
     <p>I like to work in teams and discuss design decisions.
@@ -62,7 +73,7 @@ section {
 </section>
 
 <section>
-    <h2>Skills<a name="skills" href="#skills">§</a></h2>
+    <h2 id="skills"><a class="anchor" href="#skills"><span>§</span></a>Skills</h2>
     <p>Programming languages: JavaScript, Python, C#, Rust, SQL, Perl;
     <p>Experience with frameworks: Qt5, ExtJS, .NET, Django, bottle;
     <p>Solid experience with WebDev: HTML5, CSS3, SASS, React, npm, Webpack, jQuery;
@@ -72,13 +83,13 @@ section {
 </section>
 
 <section>
-    <h2>Languages<a name="languages" href="#languages">§</a></h2>
+    <h2 id="languages"><a class="anchor" href="#languages"><span>§</span></a>Languages</h2>
     <p>English (Upper-intermediate)
-    <p>Russian, Ukranian (Native speaker)</p>
+    <p>Russian, Ukranian (Native speaker)
 </section>
 
 <section>
-    <h2>Employment experience<a name="experience" href="#experience">§</a></h2>
+    <h2 id="experience"><a class="anchor" href="#experience"><span>§</span></a>Employment experience</h2>
     <p><b>2016-04 – Present</b> Senior Software Developer, DataArt
     <p><b>2015-07 – 2015-09</b> Senior Software Developer, Cốc Cốc
     <p><b>2012-08 – 2015-03</b> Software Developer, GlobalLogic
@@ -86,9 +97,9 @@ section {
     <p><b>2010 – 2012</b> WebDev freelancing
 </section>
 
-<section class>
-    <h2>Project highlights<a name="highlights" href="#highlights">§</a></h2>
-    <h3>Deal Management System<a name="hl-dm" href="#hl-dm">§</a></h3>
+<section>
+    <h2 id="highlights"><a class="anchor" href="#highlights"><span>§</span></a>Project highlights</h2>
+    <h3 id="hl-dm"><a class="anchor" href="#hl-dm"><span>§</span></a>Deal Management System</h3>
     <p>Description: An equity investment company supports their own internal deal management system.
     Deal management is done in part via a set of rich web applications, which require continuous upgrades and support.
     Web apps complexity is ranging from simple CRUD interfaces to rich data visualisation and planning.
@@ -106,7 +117,7 @@ section {
 </section>
 
 <section>
-    <h3>CLI tools for controlling Data Exchange Infrastructure<a name="hl-cli" href="#hl-cli">§</a></h3>
+    <h3 id="hl-cli"><a class="anchor" href="#hl-cli"><span>§</span></a>CLI tools for controlling Data Exchange Infrastructure</h3>
     <p>Description: A Data Exchange provider needed a set of CLI tools to manage the infrastructure they provide.
     The responsibilities of the CLI tools included managing users, roles, containers, DNS records, etc.
     The CLI tools had to have a consistent interface and be modular, allowing selecting and extending tools.
@@ -129,7 +140,7 @@ section {
 </section>
 
 <section>
-    <h3>Internal Browser Interfaces<a name="hl-cc" href="#hl-cc">§</a></h3>
+    <h3 id="hl-cc"><a class="anchor" href="#hl-cc"><span>§</span></a>Internal Browser Interfaces</h3>
     <p>Description: The goal of the project is to provide a rich, responsive and pleasant user experience in the Browser.
     Browser interfaces included a custom media player, download manager, settings, home page and more.
     Browser features included rich integration with media sites, acceletated browsing and downloads, custom input IME, and more.
@@ -148,7 +159,7 @@ section {
 </section>
 
 <section>
-    <h3>Emergent Data Viewer<a name="hl-edw" href="#hl-edw">§</a></h3>
+    <h3 id="hl-edw"><a class="anchor" href="#hl-edw"><span>§</span></a>Emergent Data Viewer</h3>
     <p>Description: The goal of the project was to implement a native crossplatform
     application to view detailed reports produced by a portable device and allow the
     user to route the data to different locations.
@@ -168,7 +179,7 @@ section {
 </section>
 
 <section>
-    <h3>Backup and Recovery Web Console<a name="hl-bnr" href="#hl-bnr">§</a></h3>
+    <h3 id="hl-bnr"><a class="anchor" href="#hl-bnr"><span>§</span></a>Backup and Recovery Web Console</h3>
     <p>Description: The goal of the project was to create a simple web-interface and API for
     a powerful backup solution. The application provided realtime data updates and
     transaction safety. Web interface had a good coverage of underlying backup features.
@@ -189,7 +200,7 @@ section {
 </section>
 
 <section>
-    <h3>Media recording system<a name="hl-mrs" href="#hl-mrs">§</a></h3>
+    <h3 id="hl-mrs"><a class="anchor" href="#hl-mrs"><span>§</span></a>Media recording system</h3>
     <p>Description: The goal of the project was to record media from distributed sites.
     Application used a distributed storage system. The recording had to be done
     automatically on pre-set schedule. The application was controlled using a simple
@@ -209,9 +220,8 @@ section {
 </section>
 
 <section>
-    <h2>Education<a name="education" href="#education">§</a></h2>
+    <h2 id="education"><a class="anchor" href="#education"><span>§</span></a>Education</h2>
     <p><b>2014</b> Cryptography I, Stanford University Online Course
     <p><b>2006 – 2012</b> V.N. Karazin Kharkiv National University, Physical and
     Technical Faculty, master’s degree (experimental nuclear and plasma physics).
-    <p>Master thesis: Zerodimensional simulation of plasma heating with neutral beam
 </section>
