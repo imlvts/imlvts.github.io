@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Igor Malovitsa – CV</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+<style>
+body {
+    width: 800px;
+    margin: auto;
+    font-family: Fira Sans;
+    font-weight: 500;
+}
+
+a {
+    color: black;
+}
+
+h2>a[name], h3>a[name] {
+    visibility: hidden;
+    color: grey;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+h2:hover>a[name], h3:hover>a[name] {
+    visibility: visible;
+}
+
+section p, section h3, section ul {
+    margin-left: 30px;
+}
+
+section {
+    page-break-inside: avoid;
+}
+@media(print) {
+    section:last-child p:last-child {
+        margin-bottom: 0;
+    }
+}
+</style>
+</head>
+
+<body>
+<h1>Igor Malovitsa</h1>
+
+<section>
+    <h2>Contacts<a name="contacts" href="#contacts">§</a></h2>
+    <p><b>Cell:</b> <a href="tel:+380959415600">+38 (095) 94-15-600</a>
+    <p><b>Email:</b> <a href="mailto:igor.malovitsa@gmail.com">igor.malovitsa@gmail.com</a>
+    <p><b>Skype:</b> <a href="skype:igor.malovitsa">igor.malovitsa</a>
+</section>
+
+<section>
+    <h2>About myself<a name="about" href="#about">§</a></h2>
+    <p>I'm an efficient software developer with 6+ years of commercial experience in IT industry.
+    <p>I prefer problem solving over blaming.
+    <p>I like to work in teams and discuss design decisions.
+    <p>I know math and not afraid to use it.
+</section>
+
+<section>
+    <h2>Skills<a name="skills" href="#skills">§</a></h2>
+    <p>Programming languages: JavaScript, Python, C#, Rust, SQL, Perl;
+    <p>Experience with frameworks: Qt5, ExtJS, .NET, Django, bottle;
+    <p>Solid experience with WebDev: HTML5, CSS3, SASS, React, npm, Webpack, jQuery;
+    <p>Knowledge of basic *nix tools – bash, sed, grep, vim...;
+    <p>Familiarity with version control systems: git, svn;
+    <p>Fast learning and flexibility;
+</section>
+
+<section>
+    <h2>Languages<a name="languages" href="#languages">§</a></h2>
+    <p>English (Upper-intermediate)
+    <p>Russian, Ukranian (Native speaker)</p>
+</section>
+
+<section>
+    <h2>Employment experience<a name="experience" href="#experience">§</a></h2>
+    <p><b>2016-04 – Present</b> Senior Software Developer, DataArt
+    <p><b>2015-07 – 2015-09</b> Senior Software Developer, Cốc Cốc
+    <p><b>2012-08 – 2015-03</b> Software Developer, GlobalLogic
+    <p><b>2012-03 – 2012-08</b> Sysadmin
+    <p><b>2010 – 2012</b> WebDev freelancing
+</section>
+
+<section class>
+    <h2>Project highlights<a name="highlights" href="#highlights">§</a></h2>
+    <h3>Deal Management System<a name="hl-dm" href="#hl-dm">§</a></h3>
+    <p>Description: An equity investment company supports their own internal deal management system.
+    Deal management is done in part via a set of rich web applications, which require continuous upgrades and support.
+    Web apps complexity is ranging from simple CRUD interfaces to rich data visualisation and planning.
+    <p>Team size: 8 people
+    <p>Technologies used: C#, ASP.NET MVC, IIS, RavenDB, Node.JS, React, Webpack, bootstrap, Knockout.JS, Angular, HighChart
+    <p>Responsibilities:</p>
+    <ul>
+        <li>communicating with the client
+        <li>designing web UI
+        <li>feature implementation
+        <li>debugging
+        <li>code review
+        <li>writing unit tests
+    </ul>
+</section>
+
+<section>
+    <h3>CLI tools for controlling Data Exchange Infrastructure<a name="hl-cli" href="#hl-cli">§</a></h3>
+    <p>Description: A Data Exchange provider needed a set of CLI tools to manage the infrastructure they provide.
+    The responsibilities of the CLI tools included managing users, roles, containers, DNS records, etc.
+    The CLI tools had to have a consistent interface and be modular, allowing selecting and extending tools.
+    Pip package management was used to ease the installation and extension of CLI tools for the end-users.
+    <p>Project duration: 8 months; Team size: 4 people
+    <p>Technologies used: Python, pip, Node.JS, CoffeeScript, REST, Swagger, RabbitMQ, Docker
+    <p>Responsibilities:</p>
+    <ul>
+        <li>team lead
+        <li>communicating with the client
+        <li>designing CLI interface
+        <li>documenting APIs
+        <li>feature implementation
+        <li>debugging
+        <li>code review
+        <li>writing unit/integration tests
+        <li>writing design documents
+        <li>writing man pages
+    </ul>
+</section>
+
+<section>
+    <h3>Internal Browser Interfaces<a name="hl-cc" href="#hl-cc">§</a></h3>
+    <p>Description: The goal of the project is to provide a rich, responsive and pleasant user experience in the Browser.
+    Browser interfaces included a custom media player, download manager, settings, home page and more.
+    Browser features included rich integration with media sites, acceletated browsing and downloads, custom input IME, and more.
+    All of those features require a fine-tuned, responsive UI to attract and retain a large urerbase.
+    <p>Technologies used: Node.JS, HTML5, React, Webpack
+    <p>Responsibilities:</p>
+    <ul>
+        <li>communicating with the client
+        <li>designing UI
+        <li>feature implementation
+        <li>debugging
+        <li>performance optimization
+        <li>code review
+        <li>writing unit tests
+    </ul>
+</section>
+
+<section>
+    <h3>Emergent Data Viewer<a name="hl-edw" href="#hl-edw">§</a></h3>
+    <p>Description: The goal of the project was to implement a native crossplatform
+    application to view detailed reports produced by a portable device and allow the
+    user to route the data to different locations.
+    <p>Project duration: 18 months; Team size: 6 people
+    <p>Technologies used: C++, Qt5, SOAP
+    <p>Responsibilities:</p>
+    <ul>
+        <li>feature implementation
+        <li>developing Qt5/QML UI
+        <li>debugging
+        <li>implementing scripts for CI
+        <li>writing unit tests
+        <li>code review
+        <li>writing design documents
+        <li>documenting project architecture
+    </ul>
+</section>
+
+<section>
+    <h3>Backup and Recovery Web Console<a name="hl-bnr" href="#hl-bnr">§</a></h3>
+    <p>Description: The goal of the project was to create a simple web-interface and API for
+    a powerful backup solution. The application provided realtime data updates and
+    transaction safety. Web interface had a good coverage of underlying backup features.
+    <p>Project duration: 14 months; Team size: 8 people
+    <p>Technologies used: Python, JavaScript, HTML5, SASS, ExtJS, jasmine, REST
+    <p>Responsibilities:</p>
+    <ul>
+        <li>API design
+        <li>developing web UI
+        <li>developing API backend
+        <li>debugging
+        <li>writing unit test
+        <li>implementing scripts for CI
+        <li>writing deployment scripts
+        <li>code review
+        <li>communicating with clients
+    </ul>
+</section>
+
+<section>
+    <h3>Media recording system<a name="hl-mrs" href="#hl-mrs">§</a></h3>
+    <p>Description: The goal of the project was to record media from distributed sites.
+    Application used a distributed storage system. The recording had to be done
+    automatically on pre-set schedule. The application was controlled using a simple
+    web interface.
+    <p>Project duration: 8 months; Team size: 3 people
+    <p>Technologies used: Python, Django, REST, JSON, JavaScript, jQuery, SASS, ffmpeg
+    <p>Responsibilities:</p>
+    <ul>
+        <li>API design
+        <li>feature implementation
+        <li>product deployment
+        <li>developing web UI
+        <li>developing backend
+        <li>database migration
+        <li>communicating with clients
+    </ul>
+</section>
+
+<section>
+    <h2>Education<a name="education" href="#education">§</a></h2>
+    <p><b>2014</b> Cryptography I, Stanford University Online Course
+    <p><b>2006 – 2012</b> V.N. Karazin Kharkiv National University, Physical and
+    Technical Faculty, master’s degree (experimental nuclear and plasma physics).
+    <p>Master thesis: Zerodimensional simulation of plasma heating with neutral beam
+</section>
