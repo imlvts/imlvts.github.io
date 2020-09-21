@@ -46,7 +46,9 @@ const updateSuggestions = (suggestions) => {
     let component;
     if (hop.call(suggestions, 'result')) {
         const {result: {names, query}} = suggestions;
-        if (names.length) {
+        if (!query) {
+            component = 'Empty query';
+        } else if (names.length) {
             component =
                 ['ul', {},
                     ...names.map((word) =>
