@@ -4,6 +4,9 @@ FOR DEMONSTRATIONAL PURPOSES ONLY*/
 // debounce: hold off consecutive events if they happened
 // with a time interval smaller than threshold milliseconds.
 // allowLeading allows the leading event to pass through.
+//
+// Example:
+//   const transformed = debounce(200)(listener);
 export const debounce = (threshold=200, allowLeading=false) => (fn) => {
     const Idle = 0;
     const Cooldown = 1;
@@ -41,8 +44,10 @@ export const debounce = (threshold=200, allowLeading=false) => (fn) => {
 };
 
 // switchPromise is similar to Rx.js switchMap.
-// Transforms a stream of promises into a stream
-// of most recent values (or errors).
+// Transforms a stream of promises into a stream of most recent values.
+//
+// Example:
+//   const transformed = switchPromise((url) => fetch(url))(listener);
 export const switchPromise = (resolver) => (fn) => {
     let index = 0;
     let receivedIndex = -1;
@@ -66,6 +71,9 @@ const identity = x => x;
 // Removes repeating values from the stream.
 // By default, uses strict shallow equality.
 // key allows specifying a mapper for uniqueness criteria.
+//
+// Example:
+//   const transformed = distinctUntilChanged()(listener);
 export const distinctUntilChanged = (eq=shallowEq, key=identity) => (fn) => {
     let hasPrevious = false;
     let previous;
@@ -81,10 +89,19 @@ export const distinctUntilChanged = (eq=shallowEq, key=identity) => (fn) => {
 };
 
 // Transform a stream of values using a mapper function
+//
+// Example:
+// const transformed = map(x => x)(listener);
 export const map = (mapper) => (fn) => (value) => fn(mapper(value));
 
 // Apply multiple stream transformations and attach it to a stream listener.
 // stream listener is the last argument.
+//
+// Example:
+//   const transformed = pipe(
+//     map(x => x),
+//     debounce(100),
+//     listener);
 export const pipe = (...args) => {
     let index = args.length - 1;
     let fn = args[index];
