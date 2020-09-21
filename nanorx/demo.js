@@ -65,7 +65,6 @@ const updateSuggestions = (suggestions) => {
 };
 
 const handleInput = pipe(
-    map((event) => event.target.value),
     debounce(200, true),
     distinctUntilChanged(),
     switchPromise(fetchAutocomplete),
@@ -73,5 +72,6 @@ const handleInput = pipe(
 
 window.addEventListener('load', () => {
     document.getElementById('input')
-        .addEventListener('input', handleInput);
+        .addEventListener('input', (event) => handleInput(event.target.value));
+    handleInput('');
 });
