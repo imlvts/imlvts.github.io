@@ -18,20 +18,22 @@ const fetchAutocomplete = async (query) => {
 };
 
 const render = (obj) => {
-  if (typeof obj === 'string') {
-    return new Text(obj);
-  } else if (Array.isArray(obj)) {
-    if (obj[0] === '!comment') {
-      return new Comment(obj[1]);
+    if (typeof obj === 'string') {
+        return new Text(obj);
+    } else if (Array.isArray(obj)) {
+        if (obj[0] === '!comment') {
+            return new Comment(obj[1]);
+        }
+        const dom = document.createElement(obj[0]);
+        const attrs = obj[1];
+        Object.keys(attrs || {}).forEach(
+            (key) => dom.setAttribute(key, attrs[key]));
+        obj.slice(2).forEach((child) => child != null && child !== false &&
+            dom.appendChild(render(child)));
+        return dom;
+    } else {
+        throw 'Cannot make dom of: ' + obj;
     }
-    const dom = document.createElement(obj[0]);
-    const attrs = obj[1];
-    Object.keys(attrs).forEach((key) => dom.setAttribute(key, attrs[key]));
-    obj.slice(2).forEach((child) => child != null && child !== false && dom.appendChild(render(child)));
-    return dom;
-  } else {
-    throw 'Cannot make dom of: ' + obj;
-  }
 };
 
 const updateDOM = (target, component) => {
