@@ -163,7 +163,7 @@ Do you use a memory safe language for critical software components?
 What are the coding practices you use to develop software?
 
 **Action items**: Minimize the attack surface and responsibility of your critical software components.
-Avoid writing kernel modules.  Use memory safe languages for critical components.
+Avoid writing kernel modules.  [Use memory safe languages for critical components.](https://www.theregister.com/2023/04/27/microsoft_windows_rust/)
 Follow recommended coding practices/guides.  Use lint checkers and address sanitizers.
 
 ## 6. Pick at least one:
