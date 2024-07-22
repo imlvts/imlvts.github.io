@@ -117,7 +117,7 @@ At some point between testing and publishing, the final artifact (in this case, 
 
 **Action items**: Have a rigorous QA/testing approach.  Have a proper CI/CD pipeline.  Test the final artifacts which will be published, in other words, do end-to-end testing.
 
-## 4. The kernel module can't handle an invalid configuration/content file
+## 4. The kernel module can't handle an invalid configuration/content file
 
 It is crucial for software to handle corrupted and malicious inputs correctly.
 In this scenario, the published C-file was filled with zeros (https://x.com/christian_tail/status/1814299095261147448).
@@ -183,7 +183,7 @@ Files can become corrupted for many reasons: network errors, memory bit flips, d
 **Action items**: Sign the published artifacts.  Validate the hash and signature when loading a file.
 
 
-### 6.2. The updater backend signed a corrupted file without validating its correctness
+### 6.2. The updater backend signed a corrupted file without validating its correctness
 
 The publishing service received a corrupted file, didn't validate its format,
 and signed and published the update.
@@ -264,7 +264,8 @@ For things to improve, everyone must agree that improvement is necessary and cho
 This post highlights practices that were clearly lacking.
 It is not meant to be an exhaustive list of good software practices, but it is a good start.
 
-Clients need to push software vendors to use proper software development practices (proper SDLC, if you will).
+Clients need to push software vendors to use proper software development practices  
+(proper SDLC, if you will).
 
 Software vendors must follow proper software development practices.
 Software vendors must respect their clients.
