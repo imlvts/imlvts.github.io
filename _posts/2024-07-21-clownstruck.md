@@ -61,7 +61,7 @@ the foundation of your infrastructure.
 
 In this specific case, the crash was not caused by an update to the kernel module (`csagent.sys`),
 but due to an update to a "Channel File" (`C-[digits]-[digits]-[digits].sys`, or C-files below).
-*Speculation*: "Channel File" is a database of attack patterns and malware signatures, and it may serve other purposes. (Also see: US Patents [US11822515B2](https://patents.google.com/patent/US11822515B2/en) and [US11645397B2](https://patents.google.com/patent/US11645397B2/en), thanks to [@patrickwardle](https://x.com/patrickwardle/status/1814970239169282358) for highlighting this)
+*Speculation*: "Channel File" is a database of attack patterns and malware signatures, and it may serve other purposes. (Also see: US Patents US11822515B2 and US11645397B2, thanks to [@patrickwardle](https://x.com/patrickwardle/status/1814970239169282358) for highlighting this)
 And the combined system of the kernel module and C-files causes the OS to crash.
 Which means the end user must have control on the updates to C-files.
 
