@@ -2,7 +2,7 @@
 layout: post
 permalink: /clownstruck/
 title: 'CrowdStrike outage: The Unofficial Retrospective'
-date: 2015-03-23 00:33
+date: 2024-07-21 23:23
 ---
 
 ![clowdstrike fix teaser](/images/clownstruck-dark.png)
