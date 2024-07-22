@@ -1,0 +1,89 @@
+
+# Site settings
+title: Igor M # site title
+description: grug make software good
+lang: en-US # default lang
+paginate: 5
+timezone: UTC
+image: https://avatars.githubusercontent.com/u/19667888?v=4
+mode: dark # default theme "dark" | "light"
+
+# Profile settings
+author:
+  name: Igor M # author name
+  bio: grug make software good
+  username: imlvts # general username
+  github: imlvts # github username
+  email: igor.mlvts@gmail.com # email adress
+  avatar: https://avatars.githubusercontent.com/u/19667888?v=4
+  linkedin: https://www.linkedin.com/in/igor-malovitsa/
+  youtube: user/qbz32 # channel/<your_long_string> or user/<user-name>
+
+# URL settings
+url: "https://imlvts.github.io" #
+baseurl:
+permalink: /:title/
+google_analytics: # leave it blank if not wish
+fb_appid:
+
+# Collection setting
+collections:
+  posts:
+    output: true
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: post
+      comments: false
+
+# Jekyll Compose default front matter
+jekyll_compose:
+  post_default_front_matter:
+    modified:
+    tags: []
+    description:
+  draft_default_front_matter:
+    modified:
+    tags: []
+    description:
+
+# Homepage limit posts
+number_of_posts: 5
+
+# Build settings
+# theme: klise
+sass:
+  style: compressed
+
+include:
+  - _redirects
+  - .htaccess
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - CHANGELOG.md
+  - README.md
+  - node_modules
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - lighthouse.png
+  - klise-*.gem
+  - klise.gemspec
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-postfiles
