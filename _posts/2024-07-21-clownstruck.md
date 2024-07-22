@@ -214,7 +214,7 @@ indicating that the company's development process has been subpar for a long tim
 > There appears to be another widespread Crowdstrike BSOD issue with sensor 6.58 in July 2023. We had 2000 devices in the QA group set to version N and 27000 devices in N-1. 1200 devices out of 2000 experienced BSOD on 18th July 23 morning within few hours. It was BSOD in a reboot loop with Error/Stop Code "DRIVER OVERRAN STACK BUFFER" I was not allowed to post in the Crowdstrike community so sharing it here just to exchange peer experience.
 
 This post from 2023-03-01 indicates that this error has already occured in 2019:
-> https://old.reddit.com/r/sysadmin/comments/1594t5s/there_appears_to_be_another_widespread/
+> https://old.reddit.com/r/sysadmin/comments/11eqit3/there_appears_to_be_another_widespread/
 > About 1825 EST a coworker informed me that his and anothers machines BSOD with the "system thread exception not handled" due to csagent.sys.
 > 
 > I checked my machine and mine was as well. Some people still at the office were reporting machines BSOD all over the domain.
