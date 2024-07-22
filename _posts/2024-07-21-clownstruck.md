@@ -70,8 +70,8 @@ The CrowdStrike Falcon® platform does have a special property.  It's an antivir
 
 A real-time antivirus is unique because it needs to:
 
-1) ... integrate into the OS at a level that allows it to respond to malicious attacks as quickly as possible.
-2) ... have an up-to-date database of attack patterns and malware signatures.
+1. ... integrate into the OS at a level that allows it to respond to malicious attacks as quickly as possible.
+2. ... have an up-to-date database of attack patterns and malware signatures.
 
 There is an inherent tension between the need for quick threat response and maintaining system stability.
 Even in this situation, the end-user still must have the final say in the update process,
