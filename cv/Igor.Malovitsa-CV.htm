@@ -66,6 +66,7 @@ section {
     <h2 id="contacts"><a class="anchor" href="#contacts"><span>§</span></a>Contacts</h2>
     <p><b>Email:</b> <a href="mailto:igor.malovitsa@gmail.com">igor.malovitsa@gmail.com</a>
     <p><b>Skype:</b> <a href="skype:igor.malovitsa">igor.malovitsa</a>
+    <p><b>Discord: <a title="Jesse pls" href="https://discordapp.com/users/127706628194566144">@wizord.tv</a>
 </section>
 
 <section>
@@ -78,11 +79,15 @@ section {
 
 <section>
     <h2 id="skills"><a class="anchor" href="#skills"><span>§</span></a>Skills</h2>
-    <p>Programming languages: JavaScript, TypeScript, Python, C#, Rust, SQL, Perl;
-    <p>Experience with frameworks: Node.JS, .NET, Django, bottle, Qt5, ExtJS;
-    <p>Solid experience with WebDev: HTML5, CSS3, SASS, React, WebGL, npm, Webpack, jQuery;
-    <p>Solid knowledge of version control systems: git, svn;
+    <p>Programming languages: Rust, TypeScript, Python, C#, SQL, Perl;
+    <p>Good experience with reverse engineering and understanding low-level systems;
+    <p>Deep involvement in client communication;
+    <p>Mentoring people in Rust programming & software engineering;
+    <p>Conducting technical interviews for Software Engineers;
+    <p>Solid knowledge of version control systems: git, svn, TFS;
+    <p>Experience with frameworks: Node.JS, .NET, Django, bottle, Qt5;
     <p>Knowledge of basic *nix tools – bash, sed, grep, vim...;
+    <p>Can read and apply academic papers for good use;
     <p>Fast learning and flexibility;
 </section>
 
@@ -94,7 +99,7 @@ section {
 
 <section>
     <h2 id="experience"><a class="anchor" href="#experience"><span>§</span></a>Employment experience</h2>
-    <p><b>2016-04 – Present</b> Senior Software Developer, DataArt
+    <p><b>2016-04 – 2024-09</b> Senior Software Developer, DataArt
     <p><b>2015-07 – 2015-09</b> Senior Software Developer, Cốc Cốc
     <p><b>2012-08 – 2015-03</b> Software Developer, GlobalLogic
     <p><b>2012-03 – 2012-08</b> Sysadmin
@@ -103,6 +108,63 @@ section {
 
 <section>
     <h2 id="highlights"><a class="anchor" href="#highlights"><span>§</span></a>Project highlights</h2>
+    <section>
+        <h3 id="hl-ax"><a class="anchor" href="#hl-ax"><span>§</span></a>Codec for ASTERIX protocol</h3>
+        <p><a href="https://github.com/freeasterix/freeasterix">https://github.com/freeasterix/freeasterix</a>
+        <p>Description: ASTERIX is a network protocol used by air radars to communicate information about surveillance.
+        <p>Technologies used: Rust, Wireshark, Python
+        <p>The protocol codec together with a test suite, documentation and python bindings was implemented in three weeks.
+        <p>Responsibilities: All of them
+    </section>
+
+    <section>
+        <h3 id="hl-ax"><a class="anchor" href="#hl-ax"><span>§</span></a>Reverse-engineering a binary image format</h3>
+        <p>Description: Mischief is a program for drawing, built on top of vector representation. Since the progam was discontinued, there is a need to understand the format.
+        <p>The format implemented a custom compression algorithm based on LZMA+Arithmetic coding, and bit packing, which made reverse engineering a bit challenging.
+        <p>Technologies used: OllyDbg, x86 assembly, and a steady hand
+    </section>
+
+    <section>
+        <h3 id="hl-gps-clock"><a class="anchor" href="#hl-gps-clock"><span>§</span></a>Implemented a GPS clock with ESP8266</h3>
+        <p>Description: This was a pet project to dip my toes into embedded development.
+        <p>This <abbr title="hashtag-embedded">embedded</abbr> project was entirely in Rust.
+        <p>Implemented a custom async NMEA protocol parser.
+        <p>Implemented a custom MAX7219 driver.
+        <p>Experimented with MAX7219 representation and timings.
+    </section>
+
+    <section>
+        <h3 id="hl-bc"><a class="anchor" href="#hl-bc"><span>§</span></a>Custom blockchain using Substrate protocol</h3>
+        <p>Description: The customer requested to implement a distributed ledger for Carbon offsets.
+        <p>Technologies: Rust, Substrate, Node.JS, React.JS, RabbitMQ
+        <p>Team size: 10 people
+        <p>Responsibilities:
+        <ul>
+            <li>Implemented a custom fungible token system with access control
+            <li>Implmented KYC regulated requirements on the blockchain
+            <li>Implemented a benchmarking tool for blockchain throughput
+            <li>Contributed to marketplace backend and UI implementation
+        </ul>
+    </section>
+
+    <section>
+        <h3 id="hl-tp"><a class="anchor" href="#hl-tp"><span>§</span></a>Travel company front page and booking</h3>
+        <p>Description: a well known travel company has a rich front page which requires continuous support and upgrades.
+        Major tasks included implementing an OAuth2 integration for corporate clients, media-rich elements on the front page,
+        analyzing loading times and speeding up the loading time.
+        <p>Discovered and fixed a bug which increased customer retention by 3%.
+        <p>Designed and implemented a button which increased app conversion by 15%.
+        <p>Team size: 7 people
+        <p>Technologies used: React, Next.js, Contentful, Phraseapp, Docker, Angular, SCSS, Node.JS, WebPack, OAuth2, Ruby, Rails
+        <p>Responsibilities:</p>
+        <ul>
+            <li>communicating with the client
+            <li>designing interactive elements
+            <li>feature implementation
+            <li>code review
+            <li>writing unit tests
+        </ul>
+    </section>
 
     <section>
         <h3 id="hl-dm"><a class="anchor" href="#hl-dm"><span>§</span></a>Deal Management System</h3>
@@ -119,29 +181,6 @@ section {
             <li>debugging
             <li>code review
             <li>writing unit tests
-        </ul>
-    </section>
-
-    <section>
-        <h3 id="hl-cli"><a class="anchor" href="#hl-cli"><span>§</span></a>CLI tools for controlling Data Exchange Infrastructure</h3>
-        <p>Description: A Data Exchange provider needed a set of CLI tools to manage the infrastructure they provide.
-        The responsibilities of the CLI tools included managing users, roles, containers, DNS records, etc.
-        The CLI tools had to have a consistent interface and be modular, allowing selecting and extending tools.
-        Pip package management was used to ease the installation and extension of CLI tools for the end-users.
-        <p>Project duration: 8 months; Team size: 4 people
-        <p>Technologies used: Python, pip, Node.JS, CoffeeScript, REST, Swagger, RabbitMQ, Docker
-        <p>Responsibilities:</p>
-        <ul>
-            <li>team lead
-            <li>communicating with the client
-            <li>designing CLI interface
-            <li>documenting APIs
-            <li>feature implementation
-            <li>debugging
-            <li>code review
-            <li>writing unit/integration tests
-            <li>writing design documents
-            <li>writing man pages
         </ul>
     </section>
 
@@ -177,23 +216,6 @@ section {
             <li>communicating with the client
             <li>feature implementation
             <li>debugging
-            <li>code review
-            <li>writing unit tests
-        </ul>
-    </section>
-
-    <section>
-        <h3 id="hl-tp"><a class="anchor" href="#hl-tp"><span>§</span></a>Travel company front page and booking</h3>
-        <p>Description: a well known travel company has a rich front page which requires continuous support and upgrades.
-        Major tasks included implementing an OAuth2 integration for corporate clients, media-rich elements on the front page,
-        analyzing loading times and speeding up the loading time.
-        <p>Team size: 7 people
-        <p>Technologies used: React, Next.js, Contentful, Phraseapp, Docker, Angular, SCSS, Node.JS, WebPack, OAuth2, Ruby, Rails
-        <p>Responsibilities:</p>
-        <ul>
-            <li>communicating with the client
-            <li>designing interactive elements
-            <li>feature implementation
             <li>code review
             <li>writing unit tests
         </ul>
@@ -263,6 +285,9 @@ section {
 
 <section>
     <h2 id="education"><a class="anchor" href="#education"><span>§</span></a>Education</h2>
+    <p>Certified Google Cloud Developer (expired)
+    <p><b>2020</b> From Nand to Tetris / Part I, Coursera
+    <p><b>2016</b> Machine Learning, Coursera
     <p><b>2014</b> Cryptography I, Stanford University Online Course
     <p><b>2006 – 2012</b> V.N. Karazin Kharkiv National University, Physical and
     Technical Faculty, master’s degree (experimental nuclear and plasma physics).
